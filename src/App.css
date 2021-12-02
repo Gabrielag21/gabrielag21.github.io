@@ -3,11 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  border: black dotted 2px;
+  /* height: 40vmin; */
+  border: black solid 2px;
   border-radius: 75%;
   pointer-events: none;
-  float: left;
+  /* float: left; */
+  width: 300px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
