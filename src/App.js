@@ -13,13 +13,13 @@ function App() {
 
         <p>My name is Gabriela! Nice to e-meet you!</p>
 
-  <a
+  {/* <a
           className="App-link"
           href="https://github.com/Gabrielag21"
           target="_blank"
           rel="noopener noreferrer">
           Github Link!
-        </a>
+        </a> */}
 
       </header>
     </div>
