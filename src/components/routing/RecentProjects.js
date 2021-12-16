@@ -6,28 +6,16 @@ function RecentProjects() {
     <div className="App">
       <div className="banner">Welcome!</div>
       <NavBar/>
-      <header className="App-header">
+      <header className="App-header"></header>
 
-        {/* <img src={logo} className="App-logo" alt="logo" />
-
-        <p>My name is Gabriela! Nice to e-meet you!</p> */}
- 
-  {/* <a
-          className="App-link"
-          href="https://github.com/Gabrielag21"
-          target="_blank"
-          rel="noopener noreferrer">
-          Github Link!
-        </a> */}
-
-      </header>
-
-      {/* ADD MORE */}
 <p>This is the About Me Page!</p>
     <footer className="footer">
   <p>2021 Galaxy Productions, Inc.</p>
 </footer>
 
+      <div class="space stars1"></div>
+      <div class="space stars2"></div>
+      <div class="space stars3"></div>
 
 </div>    
   );

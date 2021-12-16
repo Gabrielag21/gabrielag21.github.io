@@ -1,14 +1,7 @@
 import logo from './profile_pic.png';
-// import banner from './banner.jfif';
-import './App.css';
-// import NavBar from './components/NavBar';
-import AboutMe from './components/routing/AboutMe';
-import Home from './components/routing/Home';
-import Contact from './components/routing/Contact';
-import RecentProjects from './components/routing/RecentProjects';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
-function App() {
+function Home() {
   return (
     
     <div className="App">
@@ -18,14 +11,14 @@ function App() {
     {/* NAV BAR */}
       <nav>
     <ul>
-      <li> <Link to="/Home"> Home </Link> </li>
+      <li> <Link to="/"> Home </Link> </li>
       <li> <Link to="/AboutMe"> About Me </Link> </li>
       <li> <Link to="/RecentProjects"> Recent Projects </Link> </li>
       <li> <Link to="/Contact"> Contact  </Link> </li>
     </ul>
     </nav>
 
-{/* 
+
       <header className="App-header"></header>
 
       <div>
@@ -45,23 +38,11 @@ function App() {
 
     <footer className="footer">
   <p>2021 Galaxy Productions, Inc.</p>
-</footer> */}
-
-
-<Routes>
-  <Route path="/Home" element={<Home />} />
-
-  <Route path="/AboutMe" element={<AboutMe />} />
-
-  <Route path="/RecentProjects" element={<RecentProjects />} />
-
-  <Route path="/Contact" element={<Contact />} />
-
-</Routes>
+</footer>
 
 </div> 
    
   );
 }
 
-export default App;
+export default Home;
