@@ -1,31 +1,28 @@
+html{ 
+  /* background: linear-gradient(180deg, #9198e5, #e66465, white) no-repeat; */
+  background-color: #282c34;
+  color: white;
+  /* 282c34 */
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
+  border: black solid 2px;
+  border-radius: 75%;
   pointer-events: none;
+  /* float: left; */
+  width: 300px;
+  box-shadow: 0 0 40px 5px #0ff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +33,205 @@
     transform: rotate(360deg);
   }
 }
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* BANNER */
+.banner{
+  width: 100%;
+  height: 50px;
+  /* background: url(banner.jfif); */
+  color: white;
+  font-family:Brush Script MT; 
+  font-size: 35px;
+  font-weight: 10px;
+}
+
+/* FOOTER */
+.footer {
+  text-align:left;
+  overflow: hidden;
+  color: gray;
+  text-align: center;
+}
+
+/* NAVBAR */
+.NavBar {
+text-align: center;
+}
+
+ul {
+  /* background-color: gray; */
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  
+}
+li a {
+  color: white;
+  display: block;
+  padding: 10px 170px;
+  /* text-decoration: none; */
+}
+
+li a:hover {
+  background-color: transparent;
+  color: white;
+  transform: scaleX(1.1);
+  transition: all 1s ease-in-out;
+}
+
+li {
+  float: left;
+}
+
+/* MOVING BACKGROUND */
+body {
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.space {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  border: 1px dashed purple;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@keyframes space {
+  40% {
+    opacity: 1.75;
+  }
+  50% {
+    opacity: 1.25;
+  }
+  60% {
+    opacity: 1.75;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.stars1 {
+  animation: space 180s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 25px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 50px 25px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 125px 20px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 50px 75px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 15px 125px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 110px 80px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+.stars2 {
+  animation: space 240s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 75px 125px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 100px 75px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 199px 100px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 20px 50px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 100px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 5px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+.stars3 {
+  animation: space 300s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 10px 10px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 150px 150px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 60px 170px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 175px 180px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 195px 95px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 95px 145px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+
+
+
+
