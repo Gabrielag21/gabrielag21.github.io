@@ -57,7 +57,7 @@ function App() {
     
     </div>
 
-    <footer className="footer">s
+    <footer className="footer">
   <p>2021 Galaxy Productions, Inc.</p>
 </footer>
 

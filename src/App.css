@@ -1,9 +1,9 @@
-html{ 
+/* html{  */
   /* background: linear-gradient(180deg, #9198e5, #e66465, white) no-repeat; */
-  background-color: #282c34;
-  color: white;
+  /* background-color: #282c34;
+  color: white; */
   /* 282c34 */
-}
+/* } */
 
 .App {
   text-align: center;
@@ -99,10 +99,11 @@ li {
 }
 
 /* MOVING BACKGROUND */
-body {
+html {
   background: radial-gradient(circle at bottom, navy 0, black 100%);
   height: 100vh;
   overflow: hidden;
+  color: white;
 }
 
 .space {
@@ -130,7 +131,7 @@ body {
   }
 }
 .stars1 {
-  animation: space 180s ease-in-out infinite;
+  animation: space 50s ease-in-out infinite;
   background-image:
     radial-gradient(
       1px 1px at 25px 5px, 
@@ -164,7 +165,7 @@ body {
     );
 }
 .stars2 {
-  animation: space 240s ease-in-out infinite;
+  animation: space 60s ease-in-out infinite;
   background-image:
     radial-gradient(
       1px 1px at 75px 125px, 
@@ -198,7 +199,153 @@ body {
     );
 }
 .stars3 {
-  animation: space 300s ease-in-out infinite;
+  animation: space 100s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 10px 10px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 150px 150px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 60px 170px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 175px 180px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 195px 95px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 95px 145px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+
+/* About me */
+h1{
+  color: white;
+}
+.AboutMe{
+  color: white;
+  height: 450px;
+
+}
+
+.AboutMeLogo{
+  border: black solid 2px;
+  border-radius: 450px;
+  pointer-events: none;
+  /* float: left; */
+  height: 350px;
+  box-shadow: 0 0 40px 5px #0ff;
+}
+.a-space {
+  background:  center / 200px 200px round;
+  /* border: 1px dashed purple; */
+  bottom: 0;
+  left: 0;
+  
+  right: 0;
+  top: 0;
+}
+
+@keyframes a-space {
+  40% {
+    opacity: 1.75;
+  }
+  50% {
+    opacity: 1.25;
+  }
+  60% {
+    opacity: 1.75;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stars1 {
+  animation: space 50s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 25px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 50px 25px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 125px 20px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 50px 75px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 15px 125px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 110px 80px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+.stars2 {
+  animation: space 60s ease-in-out infinite;
+  background-image:
+    radial-gradient(
+      1px 1px at 75px 125px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1px 1px at 100px 75px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      1.5px 1.5px at 199px 100px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2px 2px at 20px 50px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 100px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      2.5px 2.5px at 5px 5px, 
+      white, 
+      rgba(255, 255, 255, 0)
+    );
+}
+.stars3 {
+  animation: space 100s ease-in-out infinite;
   background-image:
     radial-gradient(
       1px 1px at 10px 10px, 
@@ -233,5 +380,10 @@ body {
 }
 
 
+/* CONTACT ME */
 
 
+a{
+  text-decoration: none;
+  color: purple;
+}

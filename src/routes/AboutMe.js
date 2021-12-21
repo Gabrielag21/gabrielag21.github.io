@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "./me.jpg";
  function AboutMe() {
   return (
     
@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
       <div className="banner">Welcome!</div>
 
    {/* MOVING BACKGROUND */}
-    <div class="space stars1"></div>
-      <div class="space stars2"></div>
-      <div class="space stars3"></div>
+    <div class="a-space stars1"></div>
+      <div class="a-space stars2"></div>
+      <div class="a-space stars3"></div>
 
    {/* NAV BAR */}
       <nav>
@@ -23,7 +23,11 @@ import { Link } from "react-router-dom";
 
       <header className="App-header"></header>
 
-      <p>About Me!</p>
+      <h1>About Me!</h1>
+      <img src={logo} className="AboutMeLogo" alt="logo" />
+
+      <p className="AboutMe">My name is Gabriela! I currently attend Lehman College seeking my undergratuate degree. I want to major in Computer Science. I still do not the profession I aspire to work in but that is all apart of the jounery of life.</p>
+    
 
     <footer className="footer">
   <p>2021 Galaxy Productions, Inc.</p>
